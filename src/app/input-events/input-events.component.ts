@@ -8,11 +8,13 @@ import { Component } from '@angular/core';
 })
 export class InputEventsComponent {
   value:string= '';
-  changeHandler(event: Event) {
-    const value = (event.target as HTMLInputElement).value;
-    console.log(value);
+  enteredvalue:string = '';
+  changeHandler(e:Event){
+    this.value = (e.target as HTMLInputElement).value;
   }
   clickHandler(){
-    this.value = ''
+    this.enteredvalue = this.value;
+    this.value = '';
   }
 }
+

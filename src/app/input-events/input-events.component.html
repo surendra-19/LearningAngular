@@ -1,4 +1,5 @@
 <div>
-    <input type="text" placeholder="Enter username" (input)="changeHandler($event)">
+    <h1>{{enteredvalue}}</h1>
+    <input type="text" placeholder="Enter username" value={{value}} (input)="changeHandler($event)" >
     <button style="margin-top: 20px; cursor:pointer;" (click)="clickHandler()" >click</button>
 </div>
